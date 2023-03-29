@@ -1,14 +1,13 @@
 import java.util.Comparator;
 
-public class LengthSurnamePeople implements Comparator<Person> {
+public class LenghtSurnamePeople implements Comparator<Person> {
     protected int maxSurname;
     protected int firstLength;
     protected int secondLength;
 
-    public LengthSurnamePeople(int maxSurname) {
+    public void LenghtSurnamePeople(int maxSurname) {
         this.maxSurname = maxSurname;
     }
-
 
     @Override
     public int compare(Person o1, Person o2) {
@@ -34,3 +33,4 @@ public class LengthSurnamePeople implements Comparator<Person> {
         return 0;
     }
 }
+
